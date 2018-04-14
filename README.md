@@ -1,5 +1,7 @@
 # React Apollo Snippets
 
+[![Version](https://vsmarketplacebadge.apphb.com/version/leveluptutorials.react-apollo-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=leveluptutorials.react-apollo-snippets)
+
 This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.com/)
 
 ## Installation
