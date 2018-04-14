@@ -26,19 +26,9 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 
 ### Components
 
-#### am
-
-```
-<Mutation
-  mutation={MUTATION_CONST}
->
-  {mutationName => (
-
-  )}
-</Mutation>
-```
-
 #### aq
+
+##### Apollo Query Simple
 
 ```
 <Query query={QUERY_CONST}>
@@ -49,6 +39,8 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 ```
 
 #### aqf
+
+##### Apollo Query Full
 
 ```
 <Query query={QUERY_CONST}>
@@ -62,7 +54,23 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 </Query>
 ```
 
+#### am
+
+##### Apollo Mutation Simple
+
+```
+<Mutation
+  mutation={MUTATION_CONST}
+>
+  {mutationName => (
+
+  )}
+</Mutation>
+```
+
 #### amrf
+
+##### Apollo Mutation Refetch Queries
 
 ```
 <Mutation
@@ -75,7 +83,9 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 </Mutation>
 ```
 
-#### amrb
+#### amb
+
+##### Apollo Mutation Button
 
 ```
 <Mutation
@@ -85,7 +95,9 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 </Mutation>
 ```
 
-#### amrb
+#### asm
+
+##### Apollo State Mutation
 
 ```
 <ApolloConsumer>
@@ -100,6 +112,8 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 ```
 
 #### ap
+
+##### Apollo Provider
 
 ```
 <ApolloProvider client={client}>

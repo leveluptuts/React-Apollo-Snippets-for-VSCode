@@ -62,7 +62,7 @@
     "description": "Apollo React Mutation Refetch"
   },
   "Apollo React Mutation Button": {
-    "prefix": "amrb",
+    "prefix": "amb",
     "body": [
       "<Mutation",
       "  mutation={MUTATION_CONST}",
