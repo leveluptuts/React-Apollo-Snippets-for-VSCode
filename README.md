@@ -1,5 +1,7 @@
 # React Apollo Snippets
 
+This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.com/)
+
 ## Installation
 
 1.  Open the extensions sidebar on Visual Studio Code
