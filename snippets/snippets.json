@@ -1,0 +1,90 @@
+{
+  "React Apollo Mutation": {
+    "prefix": "am",
+    "body": [
+      "<Mutation",
+      "  mutation={MUTATION_CONST}",
+      ">",
+      "  {mutationName => (",
+      "    $1",
+      "  )}",
+      "</Mutation>"
+    ],
+    "description": "A simple react apollo mutation"
+  },
+  "Apollo React Query Simple": {
+    "prefix": "aq",
+    "body": [
+      "<Query query={QUERY_CONST}>",
+      "  {({ data }) => (",
+      "    ${1:{data}}",
+      "  )}",
+      "</Query>"
+    ],
+    "description": "Apollo React Query Simple"
+  },
+  "Apollo Provider": {
+    "prefix": "ap",
+    "body": [
+      "<ApolloProvider client={client}>",
+      "  ${1:<App />}",
+      "</ApolloProvider>"
+    ],
+    "description": "Apollo Provider"
+  },
+  "Apollo React Query Full": {
+    "prefix": "aqf",
+    "body": [
+      "<Query query={QUERY_CONST}>",
+      "  {({ loading, error, data }) => {",
+      "    if (loading) return \"Loading...\";",
+      "    if (error) return `Error! ${error.message}`;",
+      "    return (",
+      "      ${1:{data}}",
+      "    );",
+      "  }}",
+      "</Query>"
+    ],
+    "description": "Apollo React Query Full"
+  },
+  "Apollo React Mutation Refetch": {
+    "prefix": "amrf",
+    "body": [
+      "<Mutation",
+      "  mutation={MUTATION_CONST}",
+      "  refetchQueries={['${1:queryName}']}",
+      ">",
+      "  {mutationName => (",
+      "   $2",
+      "  )}",
+      "</Mutation>"
+    ],
+    "description": "Apollo React Mutation Refetch"
+  },
+  "Apollo React Mutation Button": {
+    "prefix": "amrb",
+    "body": [
+      "<Mutation",
+      "  mutation={MUTATION_CONST}",
+      ">",
+      "  {${1:mutationName} => <button onClick={${1:mutationName}}>$2</button>}",
+      "</Mutation>"
+    ],
+    "description": "Apollo React Mutation Button"
+  },
+  "Apollo React State Mutation": {
+    "prefix": "asm",
+    "body": [
+      "<ApolloConsumer>",
+      "  {cache => (",
+      "    <Button",
+      "      onClick={() => cache.writeData({ data: { $1: $2 } })}",
+      "    >",
+      "      $3",
+      "    </Button>",
+      "  )}",
+      "</ApolloConsumer>"
+    ],
+    "description": "Apollo React State Mutation"
+  }
+}

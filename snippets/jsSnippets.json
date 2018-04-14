@@ -1,0 +1,32 @@
+{
+  "Import Apollo Provider": {
+    "prefix": "iap",
+    "scope": "javascriptreact",
+    "body": "import { ApolloProvider } from 'react-apollo';",
+    "description": "Import Apollo Provider"
+  },
+  "Import Apollo Query": {
+    "prefix": "iaq",
+    "scope": "javascriptreact",
+    "body": "import { Query } from 'react-apollo';",
+    "description": "Import Apollo Query"
+  },
+  "Import Apollo Mutation": {
+    "prefix": "iam",
+    "scope": "javascriptreact",
+    "body": "import { Mutation } from 'react-apollo';",
+    "description": "Import Apollo Mutation"
+  },
+  "Import Apollo Query&Mutation": {
+    "prefix": "iaqm",
+    "scope": "javascriptreact",
+    "body": "import { Query, Mutation } from 'react-apollo';",
+    "description": "Import Apollo Query & Mutation"
+  },
+  "Import Apollo ApolloConsumer": {
+    "prefix": "iac",
+    "scope": "javascriptreact",
+    "body": "import { ApolloConsumer } from 'react-apollo';",
+    "description": "Import Apollo ApolloConsumer"
+  }
+}

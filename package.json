@@ -1,0 +1,23 @@
+{
+  "name": "react-apollo-snippets",
+  "displayName": "React Apollo Snippets",
+  "description": "Basic snippets for React & Apollo",
+  "version": "0.0.1",
+  "publisher": "leveluptutorials",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "jsx",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsSnippets.json"
+      }
+    ]
+  }
+}
