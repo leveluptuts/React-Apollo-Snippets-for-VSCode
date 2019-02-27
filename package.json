@@ -21,7 +21,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "jsx",
+        "language": "javascriptreact",
         "path": "./snippets/snippets.json"
       },
       {
