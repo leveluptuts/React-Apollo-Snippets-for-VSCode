@@ -86,5 +86,28 @@
       "</ApolloConsumer>"
     ],
     "description": "Apollo React State Mutation"
+  },
+  "Apollo React Query Fetchmore": {
+    "prefix": "aqfm",
+    "body": [
+      "<Query query={QUERY_CONST} variables={{ }}>",
+      " {({ data, error, loading, fetchMore }) => {",
+      "   if (loading) return \"Loading...\";",
+      "   if (error) return `Error! ${error.message}`;",
+      "   fetchMore({",
+      "     query: QUERY_CONST,",
+      "     variables: {},",
+      "     updateQuery: (previousResult, { fetchMoreResult }) => {",
+      "       if (!fetchMoreResult) return previousResult",
+      "       return {",
+      "         ...previousResult",
+      "       }",
+      "     }",
+      "   });",
+      "   return data;",
+      " }}",
+      "</Query>"
+    ],
+    "description": "Apollo React Query Fetchmore"
   }
 }
