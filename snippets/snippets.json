@@ -109,5 +109,22 @@
       "</Query>"
     ],
     "description": "Apollo React Query Fetchmore"
+  },
+    "Apollo React HOC Class": {
+    "prefix": "acl",
+    "body": [
+      "import { graphql } from \"react-apollo\";",
+      "",
+      "class ${1:Comp} extends React.Component {",
+      "  render() {",
+      "    return;",
+      "  }",
+      "}",
+      "",
+      "export default graphql(QUERY_CONST, {",
+      "  options: { fetchPolicy: \"cache-and-network\" }",
+      "})(${1:Comp});"
+    ],
+    "description": "React Apollo class with graphql hoc"
   }
 }
