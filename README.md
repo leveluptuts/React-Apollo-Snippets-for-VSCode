@@ -16,13 +16,16 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 
 ### Imports
 
-| prefix | snippet                                         |
-| ------ | ----------------------------------------------- |
-| iap    | import { ApolloProvider } from 'react-apollo';  |
-| iaq    | import { Query } from 'react-apollo';           |
-| iam    | import { Mutation } from 'react-apollo';        |
-| iaqm   | import { Query, Mutation } from 'react-apollo'; |
-| iac    | import { ApolloConsumer } from 'react-apollo';  |
+| prefix | snippet                                               |
+| ------ | ----------------------------------------------------- |
+| iap    | import { ApolloProvider } from 'react-apollo';        |
+| iaq    | import { Query } from 'react-apollo';                 |
+| iam    | import { Mutation } from 'react-apollo';              |
+| iaqm   | import { Query, Mutation } from 'react-apollo';       |
+| iauq   | import { useQuery } from 'react-apollo';              |
+| iaum   | import { useMutation } from 'react-apollo';           |
+| iauqm  | import { useQuery, useMutation } from 'react-apollo'; |
+| iac    | import { ApolloConsumer } from 'react-apollo';        |
 
 ### Components
 
@@ -119,6 +122,52 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 <ApolloProvider client={client}>
   <App />
 </ApolloProvider>
+```
+
+> From v3 react apollo started supporting hooks, we library supports them.
+
+### Hooks
+
+#### uq
+
+##### Apollo useQuery Simple
+
+```
+const { data } = useQuery(QUERY_CONST);
+```
+
+#### uqf
+
+##### Apollo useQuery Full
+
+```
+const {error, data, loading} = useQuery(QUERY_CONST, { variables: {} });
+    if (loading) return "Loading...";
+    if (error) return `Error! ${error.message}`;
+```
+
+#### um
+
+##### Apollo useMutation Simple
+
+```
+const [mutationFn] = useMutation(MUTATION_CONST, { variables: {} });
+```
+
+#### umrf
+
+##### Apollo useMutation Refetch Queries
+
+```
+const [mutationFn, {error, data, loading}] = useMutation(MUTATION_CONST, { variables: {}, refetchQueries: [QUERY_CONST] });
+```
+
+#### uc
+
+##### Apollo Client
+
+```
+const client = useApolloClient();
 ```
 
 ## Sponsorship

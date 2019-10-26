@@ -11,17 +11,35 @@
     "body": "import { Query } from 'react-apollo';",
     "description": "Import Apollo Query"
   },
+  "Import Apollo useQuery": {
+    "prefix": "iauq",
+    "scope": "javascriptreact",
+    "body": "import { useQuery } from 'react-apollo';",
+    "description": "Import Apollo useQuery"
+  },
   "Import Apollo Mutation": {
     "prefix": "iam",
     "scope": "javascriptreact",
     "body": "import { Mutation } from 'react-apollo';",
     "description": "Import Apollo Mutation"
   },
+  "Import Apollo useMutation": {
+    "prefix": "iaum",
+    "scope": "javascriptreact",
+    "body": "import { useMutation } from 'react-apollo';",
+    "description": "Import Apollo useMutation"
+  },
   "Import Apollo Query&Mutation": {
     "prefix": "iaqm",
     "scope": "javascriptreact",
     "body": "import { Query, Mutation } from 'react-apollo';",
     "description": "Import Apollo Query & Mutation"
+  },
+  "Import Apollo useQuery&useMutation": {
+    "prefix": "iauqm",
+    "scope": "javascriptreact",
+    "body": "import { useQuery, useMutation } from 'react-apollo';",
+    "description": "Import Apollo useQuery & useMutation"
   },
   "Import Apollo ApolloConsumer": {
     "prefix": "iac",

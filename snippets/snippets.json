@@ -109,5 +109,33 @@
       "</Query>"
     ],
     "description": "Apollo React Query Fetchmore"
+  },
+  "Apollo React useQuery hook": {
+    "prefix": "uq",
+    "body": ["const { data } = useQuery(QUERY_CONST);"]
+  },
+  "Apollo React useQuery hook full": {
+    "prefix": "uqf",
+    "body": [
+      "const {error, data, loading} = useQuery(${1:QUERY_CONST}, { variables: {} });",
+      "    if (loading) return \"Loading...\";",
+      "    if (error) return `Error! ${error.message}`;"
+    ]
+  },
+  "Apollo React useMutation hook": {
+    "prefix": "um",
+    "body": [
+      "const [${1:mutationFn}] = useMutation(${2:MUTATION_CONST}, { variables: {$3} });"
+    ]
+  },
+  "Apollo React useMutation hook full": {
+    "prefix": "umrf",
+    "body": [
+      "const [${1:mutationFn}, {error, data, loading}] = useMutation(${2:MUTATION_CONST}, { variables: {}, refetchQueries: [${3:QUERY_CONST}] });"
+    ]
+  },
+  "Apollo React useClient hook": {
+    "prefix": "uc",
+    "body": ["const client = useApolloClient();"]
   }
 }
