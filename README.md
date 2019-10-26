@@ -124,7 +124,7 @@ This plugin is sponsored by [Level Up Tutorials](https://www.leveluptutorials.co
 </ApolloProvider>
 ```
 
-> From v3 react apollo started supporting hooks, we library supports them.
+> From v3 react apollo started supporting hooks, we support them too.
 
 ### Hooks
 
